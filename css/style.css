@@ -1,0 +1,121 @@
+body {
+  background: rgb(192, 197, 206);
+}
+
+#header {
+  height: auto;
+  background: rgb(65, 76, 76);
+  font-family: Cinzel;
+  color: rgb(192, 197, 206);
+  box-sizing: border-box;
+}
+
+#header-text {
+  padding-top: 30px;
+}
+
+#portrait {
+  padding-top: 30px;
+}
+
+img {
+  border-radius: 20%;
+}
+
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background: #d7e4ed;
+}
+
+.row {
+  margin-bottom: 60px;
+}
+
+.cd-timeline-point {
+  position: absolute;
+  border: solid;
+  border-width: 5px;
+  border-color: white;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgb(182,32,32);
+  margin-left: -22px;
+  box-sizing: border-box;
+}
+
+.cd-timeline-content {
+  background: #d7e4ed;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  width: 45%;
+  font-family: Cinzel;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px 1px #536872;
+}
+
+.btn {
+  background: rgb(192, 197, 206);
+  color: white;
+}
+
+.direction-l {
+  margin-left: 0%;
+}
+
+.direction-r {
+  margin-left: 55%;
+}
+
+.cd-timeline-block .is-hidden {
+  visibility: hidden;
+}
+
+.cd-timeline-block .bounce-in {
+  visibility: visible;
+  animation: cd-bounce-1 0.8s;
+}
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+.more {
+    display: none;
+}
+.more-less-button {
+   display: inline; 
+}
+
+.moreellipses {
+   display: inline;
+}
